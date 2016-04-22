@@ -1,4 +1,4 @@
-#!/usr/bin/RScript
+#!/usr/local/bin/RScript
 source("assemble_data_set.R")
 library(dplyr)
 
