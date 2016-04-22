@@ -30,10 +30,10 @@ Once the full data set has been gathered, the aggregate set is created with the 
 
 ## Resulting Data
 
-The resulting full data set is the combination of the training and test data sets in which the subject and activity have been added to the table. The first and second columns of the resulting data arethe activity label (from `UCI HAR Dataset/activity_labels.txt`) and the subject number. The columns selected into the full data set are all the measurements of the mean and standard deviation (ones with `mean()` or `std()` in the name).  The values of the selected columns are the same as in the original data sets (`UCI HAR Dataset/train/X_train.txt` and `UCI HAR Dataset/test/X_test.txt`). The columns have been named according to the features (in `UCI HAR Dataset/features.txt`) with the following two changes:
+The resulting full data set is the combination of the training and test data sets in which the subject and activity have been added to the table. The first and second columns of the resulting data are the activity label (from `UCI HAR Dataset/activity_labels.txt`) and the subject number. The columns selected into the full data set are all the measurements of the mean and standard deviation (ones with `mean()` or `std()` in the name).  The values of the selected columns are the same as in the original data sets (`UCI HAR Dataset/train/X_train.txt` and `UCI HAR Dataset/test/X_test.txt`). The columns have been named according to the features (in `UCI HAR Dataset/features.txt`) with the following two changes:
 
 1. paranthesis have been removed,
 2. dashes have been replaced with dots.
 
-The aggregate data set has the same columns as the full data set but the rows have been collapsed to form a mean value for each subject and each activity.
+The aggregate data set has the same columns as the full data set but the rows have been collapsed to form a mean value for each subject and each activity. The units are the same as in the raw data.
 
