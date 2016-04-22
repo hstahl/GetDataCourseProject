@@ -19,9 +19,9 @@ run_analysis <- function() {
 ## Writes the analyses to two files.
 ## Calling write_analyses(run_analysis()) is a
 ## fast way to get the processed data sets.
-write_analyses <- function(analyses, destfiles = c("full.csv","summ.csv")) {
-    write.csv(analyses$full, file = destfiles[1], row.names = FALSE)
-    write.csv(analyses$summary, file = destfiles[2], row.names = FALSE)
+write_analyses <- function(analyses, destfiles = c("full.txt","summ.txt")) {
+    write.table(analyses$full, file = destfiles[1], row.names = FALSE)
+    write.table(analyses$summary, file = destfiles[2], row.names = FALSE)
 }
 
 write_analyses(run_analysis())
